@@ -1,0 +1,19 @@
+{
+    "name": "git-clone-all",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "clone": "npm run clean && node ./index.js",
+        "clean": "rimraf ./projects"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "axios": "^0.21.1",
+        "nodegit": "^0.27.0"
+    },
+    "devDependencies": {
+        "rimraf": "^3.0.2"
+    }
+}
