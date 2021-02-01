@@ -22,7 +22,7 @@ async function run() {
                 continue;
             }
 
-            await git.Clone(`http://oauth2:${config.token}@${prj.http_url_to_repo.replace("http://", "")}`, `./projects/${prj.path}`);
+            await git.Clone(`http://oauth2:${config.token}@${prj.http_url_to_repo.replace("http://", "")}`, `./projects/${prj.namespace.name}/${prj.path}`);
         }
     } catch (error) {
         console.log(error);
